@@ -16,18 +16,20 @@ They need to be named the same, fx
 ## Metadata
 The format is on the form
 
-   <?xml version="1.0" encoding="utf-8"?>
-   <!--state can be Draft/Publish/RePublish-->
-   <!--date times is on following format 2008-09-22T14:01:54.9571247Z year-month-day-->
-   <information 
-   state="Published" 
-   publishtime="2019-04-01T21:01:54.9571247Z" 
-   headline="Azure Functions: Tips og Tricks" 
-   author="Martin Slot" tags="ioc, azure-functions" 
-   creationtime="2019-04-01T21:01:54.9571247Z" 
-   id="" 
-   rev="" />
-   
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!--state can be Draft/Publish/RePublish-->
+<!--date times is on following format 2008-09-22T14:01:54.9571247Z year-month-day-->
+<information 
+state="Published" 
+publishtime="2019-04-01T21:01:54.9571247Z" 
+headline="Azure Functions: Tips og Tricks" 
+author="Martin Slot" tags="ioc, azure-functions" 
+creationtime="2019-04-01T21:01:54.9571247Z" 
+id="" 
+rev="" />
+```
+
 The id and rev is filled if it is imported, so an editor can always head back to, update the markdown file, set the state to "RePublish" and then the app will reimport it, and set the rev properly.
 
 ## Actual content
