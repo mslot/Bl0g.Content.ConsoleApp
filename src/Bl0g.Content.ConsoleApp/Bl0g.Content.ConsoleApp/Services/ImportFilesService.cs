@@ -43,8 +43,6 @@ namespace Bl0g.Content.ConsoleApp.Services
             {
                 _hostApplicationLifetime.StopApplication();
             }
-
-            return Task.CompletedTask;
         }
 
         public Task StopAsync(CancellationToken cancellationToken)

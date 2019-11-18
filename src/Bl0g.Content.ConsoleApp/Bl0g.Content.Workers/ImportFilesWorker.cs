@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Bl0g.Content.Workers
@@ -21,7 +19,7 @@ namespace Bl0g.Content.Workers
 
         public async Task Sync()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
