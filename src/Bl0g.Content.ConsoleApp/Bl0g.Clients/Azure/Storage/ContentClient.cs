@@ -2,12 +2,13 @@
 using Bl0g.Clients.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Bl0g.Clients.Azure.Storage
 {
-    public class ContentClient : IDownloadClient
+    public class ContentClient : IDiscoverableClient
     {
-        public IEnumerable<IContentFile> DownloadFiles()
+        Task<IEnumerable<IContentFile>> IDiscoverableClient.ListFiles(string path)
         {
             throw new NotImplementedException();
         }
